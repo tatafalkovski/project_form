@@ -1,0 +1,134 @@
+.form-wrapper {
+  display: flex;
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+  .form-part {
+    width: 50%;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+    &:first-child {
+      margin-right: 20px;
+      @media screen and (max-width: 1024px) {
+        margin-right: 0px;
+      }
+    }
+    &:last-child {
+      margin-left: 20px;
+      @media screen and (max-width: 1024px) {
+        margin-left: 0px;
+      }
+    }
+    .form-field__line {
+    }
+  }
+}
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 65px;
+}
+.digits-part {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.emirates-id {
+  width: 100%;
+}
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  input {
+    &:first-child {
+      margin-right: 10px;
+    }
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+}
+input {
+  padding: 12px 20px;
+  border: 1px solid #b58fb1;
+  background-color: #fff7fe;
+  //   border-radius: 3px;
+  color: #000;
+  margin-top: 10px;
+  display: inline-block;
+  width: 100%;
+}
+input[type="text"]:focus {
+  background-color: #ffebfc;
+  border: 1px solid #ada5ac;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="tel"]:focus {
+  background-color: #ffebfc;
+  border: 1px solid #ada5ac;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="email"]:focus {
+  background-color: #ffebfc;
+  border: 1px solid #ada5ac;
+  transition: 0.5s;
+  outline: none;
+}
+input[type="number"]:focus {
+  background-color: #ffebfc;
+  border: 1px solid #ada5ac;
+  transition: 0.5s;
+  outline: none;
+}
+select {
+  border: 1px solid #b58fb1;
+  background-color: #fff7fe;
+  //   border-radius: 3px;
+  color: #9e959d;
+  margin-top: 10px;
+  width: 100%;
+}
+option:hover {
+  background-color: #fff;
+}
+label {
+}
+.form-gender {
+}
+.name-part {
+  width: 100%;
+}
+.digits::-webkit-inner-spin-button {
+  display: none;
+}
+.digits {
+  &-3 {
+    width: 15%;
+  }
+  &-4 {
+    width: 25%;
+  }
+  &-7 {
+    width: 25%;
+  }
+  &-1 {
+    width: 15%;
+  }
+}
+.wrap-part {
+  @media screen and (max-width: 1024px) {
+  }
+}
+.big-part {
+  display: flex;
+  justify-content: space-between;
+}
