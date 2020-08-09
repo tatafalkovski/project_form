@@ -1,0 +1,34 @@
+footer {
+  background-color: #46214a;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.progress-wrap {
+  display: flex;
+  align-items: center;
+}
+.text-step {
+  margin-right: 30px;
+  p {
+    color: #fff;
+    font-size: 18pxß;
+  }
+}
+.foot-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: #9d989e;
+  width: 300px;
+  height: 10px;
+  .progress-bar-sm {
+    background-color: #7a3b74;
+    width: 30%;
+    height: 10px;
+  }
+}

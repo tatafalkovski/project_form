@@ -1,0 +1,64 @@
+.logo {
+  position: relative;
+  width: 200px;
+  @media screen and (max-width: 1024px) {
+    transform: scale(0.8);
+  }
+  @media screen and (max-width: 1024px) {
+    transform: scale(0.5);
+  }
+}
+.name-logo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  p {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+}
+.circule {
+  border: 1px solid #66a0fd;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  &_sm {
+    border: 1px solid #ff599c;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+}
+.arrow {
+  width: 33px;
+  height: 30px;
+  position: absolute;
+  bottom: -5px;
+  right: 146px;
+}
+
+.sticks {
+  position: absolute;
+  .stick {
+    height: 1px;
+    width: 10px;
+    background-color: #ff599c;
+    position: absolute;
+    &-left {
+      left: 20px;
+    }
+    &-top {
+      top: -26px;
+      transform: rotate(90deg);
+      right: -5px;
+    }
+    &-right {
+      right: 20px;
+    }
+  }
+}

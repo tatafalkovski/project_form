@@ -1,0 +1,23 @@
+@import "normalize.scss";
+@import "form.scss";
+@import "header.scss";
+@import "footer.scss";
+
+h1 {
+  color: #5a366e;
+  font-size: 70px;
+  margin: 10px 0;
+  @media screen and (max-width: 1024px) {
+    font-style: 40px;
+    text-align: center;
+  }
+}
+h2 {
+  color: #5a366e;
+  margin: 10px 0;
+  text-transform: uppercase;
+  @media screen and (max-width: 1024px) {
+    font-style: 30px;
+    text-align: center;
+  }
+}

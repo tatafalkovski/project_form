@@ -1,0 +1,109 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input:not([type="radio"]) {
+  padding: 12px 20px;
+  border: 1px solid #b58fb1;
+  background-color: #fff7fe;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+}
+
+input:not([type="radio"]):not(:last-child),
+select:not(:last-child) {
+  margin-right: 15px;
+}
+
+input:focus {
+  background-color: #ffebfc;
+  border: 1px solid #ada5ac;
+  transition: 0.5s;
+  outline: none;
+}
+
+select {
+  border: 1px solid #b58fb1;
+  background-color: #fff7fe;
+  color: #9e959d;
+  width: 100%;
+}
+
+label {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.form-wrapper {
+  display: flex;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+
+  .form-part {
+    width: 50%;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+    &:first-child {
+      margin-right: 20px;
+      @media screen and (max-width: 1024px) {
+        margin-right: 0px;
+      }
+    }
+    &:last-child {
+      margin-left: 20px;
+      @media screen and (max-width: 1024px) {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+.fieldset {
+  border: none;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.form-row {
+  margin-bottom: 65px;
+
+  &--flex {
+    display: flex;
+  }
+}
+
+.input-field {
+  display: flex;
+}
+
+.digits-part {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__3 {
+    width: 15%;
+  }
+  &__4 {
+    width: 25%;
+  }
+  &__7 {
+    width: 25%;
+  }
+  &__1 {
+    width: 15%;
+  }
+}

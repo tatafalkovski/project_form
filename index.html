@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="swiper.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="head">
+        <div class="logo">
+          <div class="circule">
+            <div class="circule circule_sm">
+              <div class="arrow">
+                <img src="/images/icons/cursor.svg" alt="" />
+              </div>
+              <div class="sticks">
+                <div class="stick stick-left"></div>
+                <div class="stick stick-top"></div>
+                <div class="stick stick-right"></div>
+              </div>
+            </div>
+          </div>
+          <div class="name-logo">
+            <p>Cyber Quest</p>
+          </div>
+        </div>
+
+        <div class="icons">
+          <div class="icon">
+            <img src="/images/icons/flower.svg" alt="" />
+          </div>
+          <div class="icon">
+            <img src="/images/icons/lamp.svg" alt="" />
+          </div>
+          <div class="icon">
+            <img src="/images/icons/plant.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="heading">
+        <h2><span>— </span>Student Registration</h2>
+        <h1>Personal Details</h1>
+      </div>
+      <form
+        action="mailto:johnnyborjomi@gmail.com"
+        enctype="text/plain"
+        name="registration-form"
+        autocomplete="off"
+        id="registration-form"
+      >
+        <div class="form-wrapper">
+          <div class="form-part">
+            <div class="form-row">
+              <div class="fieldset">
+                <label for="name">Full Name (according to passport)</label>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    id="name"
+                    required
+                    placeholder="First Name"
+                  />
+                  <input type="text" required placeholder="Second Name" />
+                  <input type="text" required placeholder="Last Name" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row form-row--flex">
+              <div class="fieldset">
+                <label>Gender</label>
+                <div class="input-field">
+                  <input type="radio" name="gender" id="male" required />
+                  <label for="male">Male</label>
+                </div>
+                <div class="input-field">
+                  <input type="radio" name="gender" id="female" required />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="fieldset">
+                <label>Date of Birth</label>
+                <div class="input-field">
+                  <select name="day" id="day" style="padding: 12px 20px;">
+                    <option value="" hidden disabled selected>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                  </select>
+                  <select name="month" id="month" style="padding: 12px 20px;">
+                    <option value="" hidden disabled selected>Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                  <select name="year" id="year" style="padding: 12px 20px;">
+                    <option value="" hidden disabled selected>Year</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row form-row--flex">
+              <div class="fieldset">
+                <label for="phone-num">Phone Number (Student)</label>
+                <div class="input-field">
+                  <select
+                    name="num-code"
+                    id="num-code"
+                    style="padding: 12px 20px;"
+                  >
+                    <option value="" hidden disabled selected>000</option>
+                    <option value="111">111</option>
+                    <option value="222">222</option>
+                    <option value="333">333</option>
+                  </select>
+                  <input type="tel" id="tel" placeholder="000 0000" />
+                </div>
+              </div>
+              <div class="fieldset">
+                <label for="email">Email Adress</label>
+                <div class="input-field">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="email@domain.com"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-part">
+            <div class="form-row">
+              <div class="fieldset">
+                <label for="emirates-id" id="3-digits">Emirates ID</label>
+                <div class="input-field">
+                  <input
+                    type="number"
+                    class="digits-part__3"
+                    name="3-digits"
+                    id="emirates-id"
+                    placeholder="3 digits"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  />
+                  <input
+                    type="number"
+                    class="digits-part__4"
+                    name="4-digits"
+                    id="4-digits"
+                    placeholder="4 digits"
+                  />
+                  <input
+                    type="number"
+                    class="digits-part__7"
+                    name="7-digits"
+                    id="7-digits"
+                    placeholder="7 digits"
+                  />
+                  <input
+                    type="number"
+                    class="digits-part__1"
+                    name="1-digits"
+                    id="1-digits"
+                    placeholder="1 digits"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="fieldset">
+                <label>Are you university or school student?</label>
+                <div class="input-field">
+                  <input type="radio" name="education" id="university" />
+                  <label for="university">University</label>
+                </div>
+                <div class="input-field">
+                  <input type="radio" name="education" id="school" />
+                  <label for="school">School</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row form-row--flex">
+              <div class="fieldset">
+                <label for="university-name">University Name</label>
+                <div class="input-field">
+                  <input
+                    type="text"
+                    name="university-name"
+                    id="university-name"
+                    placeholder="Name"
+                  />
+                </div>
+              </div>
+              <div class="wrap-part half-part">
+                <label for="year-end">Year</label>
+                <div class="input-field">
+                  <select
+                    name="year-end"
+                    id="year-end"
+                    style="padding: 12px 20px;"
+                  >
+                    <option value="" hidden disabled selected>Select</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <div class="foot-wrap container">
+        <div class="progress-wrap">
+          <div class="text-step">
+            <p>Step 1</p>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-sm"></div>
+          </div>
+        </div>
+        <div class="submit">
+          <input
+            type="submit"
+            name="submit"
+            value="next"
+            class="submit"
+            id="submit"
+            form="registration-form"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="dist/script.js"></script>
+  </body>
+</html>
